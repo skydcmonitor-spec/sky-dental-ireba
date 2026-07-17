@@ -253,6 +253,33 @@ ul, ol { list-style: none; }
 .access__map { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); min-height: 320px; }
 .access__map iframe { width: 100%; height: 100%; min-height: 320px; border: 0; display: block; }
 
+/* ---------- 自費診療のリスク・副作用 ---------- */
+.risks { display: grid; gap: 18px; max-width: 900px; margin-inline: auto; }
+.risks__block {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  padding: 26px 28px; box-shadow: var(--shadow-sm);
+}
+.risks__block--common { background: var(--tint); border-color: var(--sky-pale); }
+.risks__block--alert { border-color: var(--coral); }
+.risks__title {
+  font-size: 18px; color: var(--navy); margin-bottom: 12px;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+  padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.risks__price { font-size: 13px; font-weight: 700; color: var(--coral); }
+.risks__list li { position: relative; padding: 7px 0 7px 20px; font-size: 15px; color: var(--text); line-height: 1.85; }
+.risks__list li::before {
+  content: ""; position: absolute; left: 2px; top: 16px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--sky);
+}
+.risks__block--alert .risks__list li::before { background: var(--coral); }
+.risks__list strong { color: var(--navy); font-weight: 700; }
+.risks__note {
+  max-width: 900px; margin: 26px auto 0; text-align: center;
+  font-size: 14px; color: var(--text-light); line-height: 2;
+}
+.risks__note a { color: var(--sky); font-weight: 800; }
+
 /* ---------- 関連サイトバナー ---------- */
 .banners { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .banner {
