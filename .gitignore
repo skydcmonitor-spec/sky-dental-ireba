@@ -1,0 +1,8 @@
+# プレビュー用のローカルサーバー（公開サイトには不要）
+_preview_server.ps1
+.claude/
+
+# OS が勝手に作るファイル
+Thumbs.db
+desktop.ini
+.DS_Store

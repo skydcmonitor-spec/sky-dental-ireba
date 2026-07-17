@@ -38,6 +38,10 @@
   <meta name="theme-color" content="#26295b" />
   <meta name="format-detection" content="telephone=no" />
   <link rel="preconnect" href="https://www.google.com" />
+  <!-- 丸ゴシック（Windows/Android用のWebフォント） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2333a7dd'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
 
   <!-- ===== 構造化データ：歯科医院（ローカルビジネス） ===== -->
@@ -173,7 +177,11 @@
           <img src="images/hero-smile.jpg" alt="よく噛める喜びを取り戻した笑顔" class="hero__img" />
         </div>
       </div>
-      <div class="hero__wave" aria-hidden="true"></div>
+      <div class="hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none" focusable="false">
+          <path fill="#fff" d="M0,90 L0,44 C240,76 480,86 720,60 C960,34 1200,8 1440,28 L1440,90 Z"/>
+        </svg>
+      </div>
     </section>
 
     <!-- ===== ご挨拶 ===== -->
