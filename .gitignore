@@ -2,6 +2,9 @@
 _preview_server.ps1
 .claude/
 
+# 送信用ボタン（ローカル専用）
+GitHubへ送信.bat
+
 # OS が勝手に作るファイル
 Thumbs.db
 desktop.ini

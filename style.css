@@ -23,6 +23,10 @@
   --white: #ffffff;
   --border: #e3ebef;
 
+  /* ロゴ用の明朝体（Mac/iPhone→ヒラギノ明朝、Windows→游明朝、その他→Noto Serif JP） */
+  --font-mincho: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", YuMincho,
+                 "Noto Serif JP", "MS PMincho", serif;
+
   --radius: 16px;
   --radius-sm: 10px;
   --shadow: 0 10px 30px rgba(63, 109, 137, 0.10);
@@ -72,6 +76,12 @@ ul, ol { list-style: none; }
   border-bottom: 1px solid var(--border);
 }
 .header__inner { min-height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+/* ロゴはすべて明朝体（ヘッダー・フッター共通） */
+.brand__mark, .brand__name, .brand__sub,
+.footer__brand strong, .footer__brand p {
+  font-family: var(--font-mincho);
+}
+
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand__mark {
   width: 42px; height: 42px; border-radius: 12px;
